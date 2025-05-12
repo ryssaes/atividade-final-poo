@@ -1,7 +1,8 @@
 public class Professor extends Pessoa {
+
     private String centro;
 
-    public Aluno (String cpf, String nome, int idade, String centro){
+    public Professor (String cpf, String nome, int idade, String centro){
         super(cpf, nome, idade);
         this.centro = centro;
     }
@@ -15,6 +16,6 @@ public class Professor extends Pessoa {
     }
 
     public void darAula(String materia){
-        System.out.println("O professor está ministrando a disciplina de " + materia + ".");
+        System.out.println("O professor " + getNome() + " está ministrando a disciplina de " + materia + ".");
     }
 }

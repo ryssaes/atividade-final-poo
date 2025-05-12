@@ -1,14 +1,19 @@
 public class Main {
     public static void main(String[] args) {
+        
+        Aluno a = new Aluno("123", "Teste", 19, "Teste");
+        a.pagarMensalidade();
 
-        Aluno aluno = new Aluno("123.456.789-00", "Leo", 23, "A12345");
+        Professor professor = new Professor("123", "Teste", 19, "Teste");
+        professor.darAula("Matemática");
 
-        System.out.println("Aluno: " + aluno.getNome() + ", CPF: " + aluno.getCpf() + ", Idade: " + aluno.getIdade() + ", Matrícula: " + aluno.getMatricula());
+        Regular r = new Regular("123", "Teste", 19, "Teste");
+        r.pagarMensalidade();
 
-        aluno.fazerAniversario();
+        Bolsista b = new Bolsista("123", "Teste", 19, "Teste");
+        b.pagarMensalidade();
 
-        System.out.println(aluno.getNome() + " fez aniversário e agora tem " + aluno.getIdade() + " anos.");
-
-        aluno.pagarMensalidade();
+        Visitante v = new Visitante("123", "Teste", 19);
+        v.Visitar();
     }
 }
